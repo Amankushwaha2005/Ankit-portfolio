@@ -1,0 +1,19 @@
+# Python backend
+__pycache__/
+*.py[cod]
+*.db
+backend/uploads/resumes/*
+!backend/uploads/resumes/.gitkeep
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Ankit Kushwaha</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-dot"></div>
+      Ankit<span>.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skill.html">Skill</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Gallery</span>
+        </div>
+        <div class="section-label">Our Work</div>
+        <h1 class="section-title">Photo <span>Gallery</span></h1>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Site visits and project work — a visual journey through our telecom and network operations.
+        </p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="gallery-filters fade-in">
+          <button class="gallery-filter active" data-filter="all">All Photos</button>
+          <button class="gallery-filter" data-filter="site-visit">📍 Site Visit</button>
+          <button class="gallery-filter" data-filter="project">🏗️ Project Photos</button>
+        </div>
+
+        <!-- Site Visit Photos -->
+        <div class="gallery-section fade-in" data-category="site-visit">
+          <h2 class="gallery-category-title">
+            <span class="gallery-cat-icon">📍</span> Site Visit Photos
+          </h2>
+          <div class="gallery-grid">
+            <div class="gallery-item" data-category="site-visit">
+              <img src="images/gallery/site-visit/site-1.jpg" alt="BSNL Exchange Site Visit" onerror="this.src='images/gallery/placeholder-site.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Site Visit</span>
+                <h3>BSNL Exchange Visit — Farrukhabad</h3>
+                <p>Network infrastructure inspection at BSNL telecom exchange, Farrukhabad</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="site-visit">
+              <img src="images/gallery/site-visit/site-2.jpg" alt="Fiber Optic Site Survey" onerror="this.src='images/gallery/placeholder-site.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Site Visit</span>
+                <h3>Fiber Optic Site Survey</h3>
+                <p>On-site survey for FTTH network expansion</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="site-visit">
+              <img src="images/gallery/site-visit/site-3.jpg" alt="Tower & BTS Site Visit" onerror="this.src='images/gallery/placeholder-site.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Site Visit</span>
+                <h3>Tower &amp; BTS Site</h3>
+                <p>Field visit to BTS tower and antenna installation</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="site-visit">
+              <img src="images/gallery/site-visit/site-4.jpg" alt="Rural Connectivity Site" onerror="this.src='images/gallery/placeholder-site.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Site Visit</span>
+                <h3>Rural Connectivity Site</h3>
+                <p>Expanding broadband to rural service areas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Photos -->
+        <div class="gallery-section fade-in" data-category="project">
+          <h2 class="gallery-category-title">
+            <span class="gallery-cat-icon">🏗️</span> Project Photos
+          </h2>
+          <div class="gallery-grid">
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-1.jpg" alt="FTTH Deployment Project" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>FTTH Deployment</h3>
+                <p>Fiber to the Home rollout project execution</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-2.jpg" alt="Network Upgrade Project" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>Network Upgrade</h3>
+                <p>SDH to IP network migration project</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-3.jpg" alt="Broadband Expansion" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>Broadband Expansion</h3>
+                <p>New broadband connection provisioning project</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-4.jpg" alt="Electrical Systems Project" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>Power Systems Setup</h3>
+                <p>UPS and electrical systems installation at exchange</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-5.jpg" alt="GPON Installation" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>GPON Installation</h3>
+                <p>GPON splitter and OLT installation work</p>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="project">
+              <img src="images/gallery/project/project-6.jpg" alt="Cable Laying Project" onerror="this.src='images/gallery/placeholder-project.svg'">
+              <div class="gallery-overlay">
+                <span class="gallery-tag project">Project</span>
+                <h3>Optical Cable Laying</h3>
+                <p>Underground optical fiber cable laying project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; <span id="currentYear"></span> <span>Ankit Kushwaha</span>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/navbar.js"></script>
+  <script src="JS/animation.js"></script>
+  <script src="JS/gallery.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>
