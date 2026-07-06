@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('http://localhost:5000/api/apply', {
+      const response = await fetch('/api/apply', {
         method: 'POST',
         body: formData
       });
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageEl.textContent = err.message;
         messageEl.className = 'form-message error';
       } else {
-        messageEl.textContent = 'Please start the backend server to submit your application with resume.';
+        messageEl.textContent = 'Failed to submit application. Please try again later.';
         messageEl.className = 'form-message error';
       }
     }
